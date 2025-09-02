@@ -220,6 +220,12 @@ print('-----------------------------------\n')
 
 
 
+'''
+Question 2.9: For the Student class, add a static method generate_student_id(). This method should generate a random 
+6-digit student ID (e.g., using random module). It should not take self or cls as arguments and should not rely on any 
+instance or class data. 
+'''
+
 import random
 class Student:
     def __init__(self, name, student_id):
