@@ -141,3 +141,32 @@ print("Employee class with multilevel inheritance is here : ")
 manager.get_details()
 print('-----------------------------------\n')
 
+
+'''
+Question 3.6: Create a base class Vehicle with __init__ taking make and model, and a method start_engine(). 
+Create a subclass ElectricCar that inherits from Vehicle. Override start_engine() in ElectricCar to print 
+"Starting electric motor silently." 
+'''
+
+class Vehicle:
+    def __init__(self, make, model):
+        self.make = make
+        self.model = model
+    
+    def start_engine(self):
+        print(f"{self.make} {self.model} engine started.")
+
+
+class ElectricCar(Vehicle):
+    def __init__(self, make, model):
+        super().__init__(make, model)
+
+    
+    def start_engine(self):
+        print(f"{self.make} {self.model} Starting electric motor silently.")
+
+my_car = ElectricCar("Tesla", "Model S")
+print("Vehicle class with method overriding is here : ")
+my_car.start_engine()
+print('-----------------------------------\n')
+
