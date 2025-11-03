@@ -6,3 +6,6 @@ notebook
 jupyterlab
 ipykernel
 notebook
+openai
+langchain-core
+langchain-community
