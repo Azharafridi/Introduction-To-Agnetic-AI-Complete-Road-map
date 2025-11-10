@@ -1,3 +1,17 @@
+"""
+Using LangChain's FewShotPromptTemplate, create a simple sentiment classifier that: 
+Learns from examples like (1 positive, 1 negative) 
+Classifies new text inputs as either "Happy" or "Sad" 
+Formats the prompt clearly with examples and instructions 
+Requirements: 
+Define training examples: 
+"text": "I got a promotion today!", "label": "Happy" 
+"text": "My dog passed away", "label": "Sad" 
+Test your classifier with: 
+"I failed my exam" (should return "Sad") 
+Write the complete Python code to implement this classifier using LangChain's few-shot learning components.  
+"""
+
 from langchain_core.prompts import FewShotPromptTemplate, PromptTemplate
 from langchain_openai import ChatOpenAI
 import os

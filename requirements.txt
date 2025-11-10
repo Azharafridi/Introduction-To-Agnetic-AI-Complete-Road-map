@@ -9,3 +9,8 @@ notebook
 openai
 langchain-core
 langchain-community
+langchainhub
+wikipedia
+langchain_tavily
+langchain_groq
+arxiv
